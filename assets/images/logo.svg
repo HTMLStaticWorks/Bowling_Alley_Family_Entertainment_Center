@@ -1,0 +1,7 @@
+<svg width="210" height="50" viewBox="0 0 210 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="25" cy="25" r="18" fill="#D81B60"/>
+    <circle cx="18" cy="18" r="2.5" fill="#fff"/>
+    <circle cx="32" cy="18" r="2.5" fill="#fff"/>
+    <circle cx="25" cy="28" r="2.5" fill="#fff"/>
+    <text x="52" y="34" font-family="'Outfit', sans-serif" font-weight="700" font-size="26" fill="#333333">StrikeZone</text>
+</svg>

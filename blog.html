@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrikeZone | Blog</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;520;540;580&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D81B60'><circle cx='12' cy='12' r='10'/><circle cx='9' cy='9' r='1.5' fill='%23fff'/><circle cx='15' cy='9' r='1.5' fill='%23fff'/><circle cx='12' cy='14' r='1.5' fill='%23fff'/></svg>">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <button class="navbar-toggler border-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="bi bi-list fs-2 text-body"></i>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="StrikeZone Logo" style="max-width: 180px; max-height: 50px;">
+            </a>
+
+            <div class="d-flex d-lg-none align-items-center gap-2 ms-auto">
+                <button class="theme-toggle-btn" aria-label="Toggle theme"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="15" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="12" cy="14" r="1.5" fill="var(--bg-color, #fff)" /></svg></button>
+                <button class="rtl-toggle-btn" aria-label="Toggle RTL"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="15" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="12" cy="14" r="1.5" fill="var(--bg-color, #fff)" /></svg></button>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="assets/images/logo.svg" alt="StrikeZone Logo" style="max-width: 150px; max-height: 40px;">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                    <div class="d-none d-lg-flex align-items-center gap-3">
+                        <button class="theme-toggle-btn" aria-label="Toggle theme"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="15" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="12" cy="14" r="1.5" fill="var(--bg-color, #fff)" /></svg></button>
+                        <button class="rtl-toggle-btn" aria-label="Toggle RTL"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="15" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="12" cy="14" r="1.5" fill="var(--bg-color, #fff)" /></svg></button>
+                        <a href="login.html" class="btn btn-primary">Login</a>
+                    </div>
+                    
+                    <div class="d-flex d-lg-none flex-column gap-2 mt-4">
+                        <a href="login.html" class="btn btn-primary w-100">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Centered Hero Section -->
+        <section class="hero-section text-white d-flex align-items-center" style="min-height: 50vh; background: linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62)), url('assets/images/hero-inner-bg.png') center/cover;">
+            <div class="container position-relative z-2">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold mb-3 text-white">StrikeZone Blog</h1>
+                        <p class="lead text-white-50 fs-5 mb-0">News, events, and tips for making the most of your family entertainment experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content & Sidebar -->
+        <section class="section-padding bg-light-alt">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Main Content: Blog Grid -->
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <!-- Blog Post 1 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1555620950-891969a47d34?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Bowling Tips">
+                                    <div class="card-body text-start d-flex flex-column">
+                                        <div class="mb-2 text-primary small fw-bold">Tips & Tricks</div>
+                                        <h3 class="h5 mb-3"><a href="blog-details.html" class="text-decoration-none text-body">5 Tips to Improve Your Bowling Score Instantly</a></h3>
+                                        <p class="text-muted flex-grow-1">Whether you're throwing gutters or just missing that spare, these 5 simple tips will help you hit the pocket consistently.</p>
+                                        <a href="blog-details.html" class="fw-bold mt-auto text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog Post 2 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1530103862676-de8892ebeea0?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Events">
+                                    <div class="card-body text-start d-flex flex-column">
+                                        <div class="mb-2 text-primary small fw-bold">Events</div>
+                                        <h3 class="h5 mb-3"><a href="blog-details.html" class="text-decoration-none text-body">How to Plan the Ultimate Kids Birthday Party</a></h3>
+                                        <p class="text-muted flex-grow-1">Take the stress out of party planning. Our event coordinators share their secrets to a flawless birthday bash.</p>
+                                        <a href="blog-details.html" class="fw-bold mt-auto text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog Post 3 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Food">
+                                    <div class="card-body text-start d-flex flex-column">
+                                        <div class="mb-2 text-primary small fw-bold">Food & Drink</div>
+                                        <h3 class="h5 mb-3"><a href="blog-details.html" class="text-decoration-none text-body">New Summer Cocktails & Menu Items</a></h3>
+                                        <p class="text-muted flex-grow-1">Beat the heat with our new signature lane-side cocktails and fresh summer appetizers.</p>
+                                        <a href="blog-details.html" class="fw-bold mt-auto text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blog Post 4 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Arcade">
+                                    <div class="card-body text-start d-flex flex-column">
+                                        <div class="mb-2 text-primary small fw-bold">News</div>
+                                        <h3 class="h5 mb-3"><a href="blog-details.html" class="text-decoration-none text-body">We Just Added 10 New VR Arcade Games!</a></h3>
+                                        <p class="text-muted flex-grow-1">Step into another dimension. We've expanded our retro arcade to include cutting edge VR experiences.</p>
+                                        <a href="blog-details.html" class="fw-bold mt-auto text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pagination -->
+                        <nav aria-label="Page navigation" class="mt-5">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <!-- Sidebar: Search & Filter -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body p-4 text-start">
+                                <h4 class="mb-3">Search</h4>
+                                <form class="d-flex" onsubmit="event.preventDefault();">
+                                    <input class="form-control me-2" type="search" placeholder="Search articles..." aria-label="Search">
+                                    <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body p-4 text-start">
+                                <h4 class="mb-3">Categories</h4>
+                                <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                                    <li><a href="#" class="text-decoration-none text-muted d-flex justify-content-between"><span>News</span> <span class="badge bg-light text-dark">8</span></a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted d-flex justify-content-between"><span>Events</span> <span class="badge bg-light text-dark">12</span></a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted d-flex justify-content-between"><span>Tips & Tricks</span> <span class="badge bg-light text-dark">5</span></a></li>
+                                    <li><a href="#" class="text-decoration-none text-muted d-flex justify-content-between"><span>Food & Drink</span> <span class="badge bg-light text-dark">3</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="section-padding bg-light">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <i class="bi bi-envelope-paper-heart text-primary display-4 mb-3 d-block"></i>
+                        <h2 class="mb-3">Never Miss an Update</h2>
+                        <p class="text-muted mb-4">Subscribe to our blog newsletter and get the latest news, event announcements, and bowling tips right in your inbox.</p>
+                        <form class="d-flex gap-2 justify-content-center" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                            <input type="email" class="form-control form-control-lg border-primary border-opacity-50" placeholder="Enter your email address" style="max-width: 300px;" required>
+                            <button type="submit" class="btn btn-primary btn-lg px-4">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a class="d-flex align-items-center text-white text-decoration-none mb-3" href="index.html">
+                        <img src="assets/images/logo.svg" alt="StrikeZone Logo" style="max-width: 180px; max-height: 50px;" class="footer-logo">
+                    </a>
+                    <p class="small text-white-50 mb-4">Your ultimate destination for family fun, competitive bowling, and unforgettable events.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4 text-white">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4 text-white">Resources</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="booking.html">Book a Lane</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4 text-white">Stay Updated</h5>
+                    <form class="d-flex" onsubmit="event.preventDefault();">
+                        <input type="email" class="form-control rounded-end-0 border-0" placeholder="Email Address" required>
+                        <button class="btn btn-primary rounded-start-0" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top border-secondary text-center text-md-start">
+                <div class="col-md-6 mb-3 mb-md-0"><p class="small text-white-50 mb-0">&copy; 2026 StrikeZone. All rights reserved.</p></div>
+                <div class="col-md-6 text-md-end"><a href="#" class="small text-white-50 me-3">Privacy Policy</a><a href="#" class="small text-white-50">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

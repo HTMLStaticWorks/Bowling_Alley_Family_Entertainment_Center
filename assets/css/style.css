@@ -1,0 +1,251 @@
+/* Base Colors & Variables */
+:root {
+  --primary-color: #D81B60; /* Vibrant Pink */
+  --secondary-color: #1E88E5; /* Vibrant Blue */
+  --tertiary-color: #121212; /* Dark text/footer */
+  
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+
+  --font-family: 'Outfit', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Typography Rules */
+h1, .h1 { font-weight: 580; font-size: clamp(4.5rem, 5vw, 6rem); line-height: 1.1; }
+h2, .h2 { font-weight: 540; font-size: clamp(3rem, 4vw, 4.5rem); }
+h3, .h3 { font-weight: 520; font-size: clamp(2rem, 3vw, 3rem); }
+h4, h5, h6 { font-weight: 500; font-size: clamp(1.5rem, 2vw, 2rem); }
+p { font-weight: 400; font-size: 1rem; line-height: 1.6; }
+.lead { font-weight: 450; font-size: 1.25rem; }
+.small, small { font-weight: 400; font-size: 0.875rem; }
+strong, b { font-weight: 500; }
+
+/* Buttons */
+.btn {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #ad144b;
+  border-color: #ad144b;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #1565c0;
+  border-color: #1565c0;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+.card-body {
+  padding: 2rem;
+  text-align: center;
+}
+.card-img-top {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  object-fit: cover;
+  height: 250px;
+}
+
+/* Header & Nav */
+.navbar {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+}
+.navbar.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+.navbar-brand img {
+  max-width: 180px;
+  max-height: 50px;
+  object-fit: contain;
+}
+.nav-link {
+  font-weight: 450;
+  color: var(--text-color);
+}
+.nav-link.active {
+  color: var(--primary-color) !important;
+  font-weight: 500;
+}
+
+/* Offcanvas Mobile Menu */
+.offcanvas {
+  background-color: var(--bg-color);
+}
+.offcanvas-title img {
+  max-width: 150px;
+  max-height: 40px;
+}
+
+/* Theme / RTL Toggles */
+.theme-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 50%;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rtl-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 50%;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover, .rtl-toggle-btn:hover {
+  background-color: var(--border-color);
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 6rem 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+/* NOTE: No ::before overlay here — each hero page already embeds a
+   linear-gradient dark overlay directly in its inline `background` style.
+   Keeping them separate prevents the old double-overlay conflict that
+   washed out text in light mode and killed the image in dark mode. */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero headings — always crisp white regardless of theme */
+.hero-section h1,
+.hero-section h2,
+.hero-section .display-2,
+.hero-section .display-3 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Hero paragraphs & subheadings — highly readable on dark overlays */
+.hero-section p,
+.hero-section .lead,
+.hero-section .text-white-50 {
+  color: rgba(255, 255, 255, 0.92) !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark mode: slightly deepen the overall hero for extra punch */
+[data-bs-theme="dark"] .hero-section {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.12);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--tertiary-color);
+  color: #fff;
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
+}
+.footer a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer-logo {
+  max-width: 180px;
+  max-height: 50px;
+  margin-bottom: 1rem;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top:hover {
+  background-color: #ad144b;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Utilities */
+.section-padding {
+  padding: 5rem 0;
+}
+.bg-light-alt {
+  background-color: #f8f9fa;
+}
+[data-bs-theme="dark"] .bg-light-alt {
+  background-color: #1a1a1a;
+}

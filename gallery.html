@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrikeZone | Our Services</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;520;540;580&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D81B60'><circle cx='12' cy='12' r='10'/><circle cx='9' cy='9' r='1.5' fill='%23fff'/><circle cx='15' cy='9' r='1.5' fill='%23fff'/><circle cx='12' cy='14' r='1.5' fill='%23fff'/></svg>">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <button class="navbar-toggler border-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="bi bi-list fs-2 text-body"></i>
+            </button>
+
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="9" cy="9" r="1.5" fill="#fff" />
+                    <circle cx="15" cy="9" r="1.5" fill="#fff" />
+                    <circle cx="12" cy="14" r="1.5" fill="#fff" />
+                </svg>
+                <span class="fw-bold fs-4 text-body">StrikeZone</span>
+            </a>
+
+            <div class="d-flex d-lg-none align-items-center gap-2 ms-auto">
+                <button class="theme-toggle-btn" aria-label="Toggle theme"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="15" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="12" cy="14" r="1.5" fill="var(--bg-color, #fff)" /></svg></button>
+                <button class="rtl-toggle-btn" aria-label="Toggle RTL"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="15" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="12" cy="14" r="1.5" fill="var(--bg-color, #fff)" /></svg></button>
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <div class="offcanvas-title d-flex align-items-center gap-2" id="offcanvasNavbarLabel">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /></svg>
+                        <span class="fw-bold fs-5 text-body">StrikeZone</span>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    
+                    <div class="d-none d-lg-flex align-items-center gap-3">
+                        <button class="theme-toggle-btn" aria-label="Toggle theme"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="15" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="12" cy="14" r="1.5" fill="var(--bg-color, #fff)" /></svg></button>
+                        <button class="rtl-toggle-btn" aria-label="Toggle RTL"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="15" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="12" cy="14" r="1.5" fill="var(--bg-color, #fff)" /></svg></button>
+                        <a href="login.html" class="btn btn-primary">Login</a>
+                        </div>
+                    
+                    <div class="d-flex d-lg-none flex-column gap-2 mt-4">
+                        <a href="login.html" class="btn btn-primary w-100">Login</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Centered Hero Section with Background Image -->
+        <section class="hero-section text-white d-flex align-items-center" style="min-height: 50vh; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('assets/images/hero-inner-bg.png') center/cover;">
+            <div class="container position-relative z-2">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold mb-3 text-white">Our Gallery</h1>
+                        <p class="lead text-white-50 fs-5 mb-0">Take a look at the unforgettable moments captured at StrikeZone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Gallery Masonry Grid Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="rounded-4 overflow-hidden mb-3 shadow-sm h-100 position-relative group">
+                            <img src="https://images.unsplash.com/photo-1511516109961-1250f28fb848?q=80&w=600&auto=format&fit=crop" class="img-fluid w-100 object-fit-cover" style="height: 300px;" alt="Gallery Image 1">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="rounded-4 overflow-hidden mb-3 shadow-sm h-100 position-relative group">
+                            <img src="https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=600&auto=format&fit=crop" class="img-fluid w-100 object-fit-cover" style="height: 300px;" alt="Gallery Image 2">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="rounded-4 overflow-hidden mb-3 shadow-sm h-100 position-relative group">
+                            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=600&auto=format&fit=crop" class="img-fluid w-100 object-fit-cover" style="height: 300px;" alt="Gallery Image 3">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="rounded-4 overflow-hidden mb-3 shadow-sm h-100 position-relative group">
+                            <img src="https://images.unsplash.com/photo-1555620950-891969a47d34?q=80&w=800&auto=format&fit=crop" class="img-fluid w-100 object-fit-cover" style="height: 400px;" alt="Gallery Image 4">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="rounded-4 overflow-hidden mb-3 shadow-sm h-100 position-relative group">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=800&auto=format&fit=crop" class="img-fluid w-100 object-fit-cover" style="height: 400px;" alt="Gallery Image 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Call to Action Section -->
+        <section class="section-padding bg-primary text-white text-center">
+            <div class="container">
+                <h2 class="mb-4 text-white">Create Your Own Memories</h2>
+                <p class="lead mb-5 text-white-50">Book a lane or plan your next event with us today.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="booking.html" class="btn btn-light btn-lg text-primary fw-bold">Book Now</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a class="d-flex align-items-center gap-2 text-white text-decoration-none mb-3" href="index.html">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="#fff" /><circle cx="15" cy="9" r="1.5" fill="#fff" /><circle cx="12" cy="14" r="1.5" fill="#fff" /></svg>
+                        <span class="fw-bold fs-4">StrikeZone</span>
+                    </a>
+                    <p class="small text-white-50 mb-4">Your ultimate destination for family fun, competitive bowling, and unforgettable events.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4 text-white">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="pricing.html">Pricing Plans</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4 text-white">Resources</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="booking.html">Book a Lane</a></li>
+                        <li><a href="blog.html">News & Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4 text-white">Stay Updated</h5>
+                    <form class="d-flex" onsubmit="event.preventDefault();">
+                        <input type="email" class="form-control rounded-end-0 border-0" placeholder="Email Address" required>
+                        <button class="btn btn-primary rounded-start-0" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top border-secondary text-center text-md-start">
+                <div class="col-md-6 mb-3 mb-md-0"><p class="small text-white-50 mb-0">&copy; 2026 StrikeZone. All rights reserved.</p></div>
+                <div class="col-md-6 text-md-end"><a href="#" class="small text-white-50 me-3">Privacy Policy</a><a href="#" class="small text-white-50">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
