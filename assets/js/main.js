@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   htmlEl.setAttribute('data-bs-theme', savedTheme);
   
   themeToggleBtns.forEach(btn => {
-      if(savedTheme === 'dark') btn.innerHTML = 'Light';
-      else btn.innerHTML = 'Dark';
+      if(savedTheme === 'dark') btn.innerHTML = '<i class="bi bi-sun-fill fs-5"></i>';
+      else btn.innerHTML = '<i class="bi bi-moon-stars-fill fs-5"></i>';
       
       btn.addEventListener('click', () => {
           const currentTheme = htmlEl.getAttribute('data-bs-theme');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
           localStorage.setItem('theme', newTheme);
           
           themeToggleBtns.forEach(b => {
-              b.innerHTML = newTheme === 'dark' ? 'Light' : 'Dark';
+              b.innerHTML = newTheme === 'dark' ? '<i class="bi bi-sun-fill fs-5"></i>' : '<i class="bi bi-moon-stars-fill fs-5"></i>';
           });
       });
   });

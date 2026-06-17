@@ -38,3 +38,26 @@
 [data-bs-theme="dark"] .btn-close {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
+
+/* ── Newsletter Section: guaranteed contrast in both modes ── */
+.newsletter-section {
+  background-color: #f0f2f5;
+}
+.newsletter-section h2,
+.newsletter-section h3 {
+  color: #111111 !important;
+}
+.newsletter-section p {
+  color: #444444 !important;
+}
+
+[data-bs-theme="dark"] .newsletter-section {
+  background-color: #1a1d23;
+}
+[data-bs-theme="dark"] .newsletter-section h2,
+[data-bs-theme="dark"] .newsletter-section h3 {
+  color: #f0f0f0 !important;
+}
+[data-bs-theme="dark"] .newsletter-section p {
+  color: #b0b8c8 !important;
+}
