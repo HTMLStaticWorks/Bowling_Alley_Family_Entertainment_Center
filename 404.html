@@ -25,8 +25,14 @@
             <button class="navbar-toggler border-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <i class="bi bi-list fs-2 text-body"></i>
             </button>
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.svg" alt="StrikeZone Logo" style="max-width: 210px; max-height: 50px; width: 100%;">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="9" cy="9" r="1.5" fill="#fff" />
+                    <circle cx="15" cy="9" r="1.5" fill="#fff" />
+                    <circle cx="12" cy="14" r="1.5" fill="#fff" />
+                </svg>
+                <span class="fw-bold fs-4 text-body">StrikeZone</span>
             </a>
             <div class="d-flex d-lg-none align-items-center gap-2 ms-auto">
                 <button class="theme-toggle-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="15" cy="9" r="1.5" fill="var(--bg-color, #fff)" /><circle cx="12" cy="14" r="1.5" fill="var(--bg-color, #fff)" /></svg></button>
@@ -34,8 +40,14 @@
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header border-bottom">
-                    <div class="offcanvas-title" id="offcanvasNavbarLabel">
-                        <img src="assets/images/logo.svg" alt="StrikeZone Logo" style="max-width: 150px; max-height: 40px;">
+                    <div class="offcanvas-title d-flex align-items-center gap-2" id="offcanvasNavbarLabel">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="9" cy="9" r="1.5" fill="#fff" />
+                            <circle cx="15" cy="9" r="1.5" fill="#fff" />
+                            <circle cx="12" cy="14" r="1.5" fill="#fff" />
+                        </svg>
+                        <span class="fw-bold fs-5 text-body">StrikeZone</span>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
@@ -85,10 +97,16 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <a class="d-flex align-items-center text-white text-decoration-none mb-3" href="index.html">
-                        <img src="assets/images/logo.svg" alt="StrikeZone Logo" style="max-width: 180px; max-height: 50px;" class="footer-logo">
+                    <a class="d-flex align-items-center text-body text-decoration-none mb-3 gap-2" href="index.html">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="9" cy="9" r="1.5" fill="#fff" />
+                            <circle cx="15" cy="9" r="1.5" fill="#fff" />
+                            <circle cx="12" cy="14" r="1.5" fill="#fff" />
+                        </svg>
+                        <span class="fw-bold fs-4">StrikeZone</span>
                     </a>
-                    <p class="small text-white-50 mb-4">Your ultimate destination for family fun, competitive bowling, and unforgettable events.</p>
+                    <p class="small text-muted mb-4">Your ultimate destination for family fun, competitive bowling, and unforgettable events.</p>
                     <div class="d-flex gap-3">
                         <a href="#"><i class="bi bi-facebook fs-5"></i></a>
                         <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
@@ -96,7 +114,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4 text-white">Quick Links</h5>
+                    <h5 class="mb-4 text-body">Quick Links</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Our Services</a></li>
@@ -105,7 +123,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4 text-white">Resources</h5>
+                    <h5 class="mb-4 text-body">Resources</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="booking.html">Book a Lane</a></li>
                         <li><a href="blog.html">News & Events</a></li>
@@ -113,7 +131,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4 text-white">Stay Updated</h5>
+                    <h5 class="mb-4 text-body">Stay Updated</h5>
                     <form class="d-flex" onsubmit="event.preventDefault();">
                         <input type="email" class="form-control rounded-end-0 border-0" placeholder="Email Address" required>
                         <button class="btn btn-primary rounded-start-0" type="submit">Subscribe</button>
@@ -121,8 +139,8 @@
                 </div>
             </div>
             <div class="row mt-5 pt-4 border-top border-secondary text-center text-md-start">
-                <div class="col-md-6 mb-3 mb-md-0"><p class="small text-white-50 mb-0">&copy; 2026 StrikeZone. All rights reserved.</p></div>
-                <div class="col-md-6 text-md-end"><a href="#" class="small text-white-50 me-3">Privacy Policy</a><a href="#" class="small text-white-50">Terms of Service</a></div>
+                <div class="col-md-6 mb-3 mb-md-0"><p class="small text-muted mb-0">&copy; 2026 StrikeZone. All rights reserved.</p></div>
+                <div class="col-md-6 text-md-end"><a href="#" class="small text-muted me-3">Privacy Policy</a><a href="#" class="small text-muted">Terms of Service</a></div>
             </div>
         </div>
     </footer>

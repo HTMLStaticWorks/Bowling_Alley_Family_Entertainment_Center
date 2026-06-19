@@ -6,17 +6,6 @@
   --border-color: #333333;
 }
 
-[data-bs-theme="dark"] .navbar {
-  background-color: #121212;
-  border-bottom-color: #333333;
-}
-
-[data-bs-theme="dark"] .navbar-brand img,
-[data-bs-theme="dark"] .footer-logo,
-[data-bs-theme="dark"] .offcanvas-title img {
-  filter: brightness(0) invert(1);
-}
-
 [data-bs-theme="dark"] .card {
   border-color: #333333;
 }

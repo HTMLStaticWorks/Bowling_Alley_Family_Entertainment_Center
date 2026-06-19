@@ -32,3 +32,8 @@
 [dir="rtl"] .card-body {
   text-align: center;
 }
+
+[dir="rtl"] .offcanvas-header .btn-close {
+  margin-left: -0.5rem !important;
+  margin-right: auto !important;
+}

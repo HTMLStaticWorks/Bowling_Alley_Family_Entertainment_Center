@@ -84,8 +84,8 @@ strong, b { font-weight: 500; }
 
 /* Header & Nav */
 .navbar {
-  background-color: var(--bg-color);
-  border-bottom: 1px solid var(--border-color);
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e0e0e0 !important;
   transition: background-color 0.3s ease;
 }
 .navbar.sticky-top {
@@ -98,18 +98,37 @@ strong, b { font-weight: 500; }
   max-height: 50px;
   object-fit: contain;
 }
+.navbar .text-body {
+  color: #333333 !important;
+}
 .nav-link {
   font-weight: 450;
-  color: var(--text-color);
+  color: #333333 !important;
+  white-space: nowrap;
 }
-.nav-link.active {
+.nav-link.active, .nav-link:hover {
   color: var(--primary-color) !important;
   font-weight: 500;
 }
 
+/* Adjust navbar spacing for 1024px screens to prevent overlap */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-nav .nav-link {
+    padding-right: 0.4rem !important;
+    padding-left: 0.4rem !important;
+  }
+  .navbar-nav.gap-lg-3 {
+    gap: 0.5rem !important;
+  }
+}
+
 /* Offcanvas Mobile Menu */
 .offcanvas {
-  background-color: var(--bg-color);
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+.offcanvas .text-body {
+  color: #333333 !important;
 }
 .offcanvas-title img {
   max-width: 150px;
@@ -117,6 +136,26 @@ strong, b { font-weight: 500; }
 }
 
 /* Theme / RTL Toggles */
+.offcanvas-header .btn-close {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: -0.5rem;
+  opacity: 0.8;
+  box-sizing: border-box;
+  background-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.offcanvas-header .btn-close:hover {
+  opacity: 1;
+  background-color: var(--border-color);
+  transform: rotate(90deg);
+}
+
 .theme-toggle-btn {
   background: transparent;
   border: 1px solid var(--border-color);
@@ -136,13 +175,13 @@ strong, b { font-weight: 500; }
   background: transparent;
   border: 1px solid var(--border-color);
   color: var(--text-color);
-  border-radius: 22px;
-  padding: 0 14px;
+  border-radius: 50%;
+  padding: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 45px;
   height: 45px;
-  min-width: 45px;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -152,6 +191,17 @@ strong, b { font-weight: 500; }
 
 .theme-toggle-btn:hover, .rtl-toggle-btn:hover {
   background-color: var(--border-color);
+}
+
+/* Force high contrast for toggles inside always-light containers */
+.navbar .theme-toggle-btn, .navbar .rtl-toggle-btn,
+.offcanvas .theme-toggle-btn, .offcanvas .rtl-toggle-btn {
+  color: #333333 !important;
+  border-color: #cccccc !important;
+}
+.navbar .theme-toggle-btn:hover, .navbar .rtl-toggle-btn:hover,
+.offcanvas .theme-toggle-btn:hover, .offcanvas .rtl-toggle-btn:hover {
+  background-color: #f1f1f1 !important;
 }
 
 /* Hero Section */
@@ -196,18 +246,25 @@ strong, b { font-weight: 500; }
 
 /* Footer */
 .footer {
-  background-color: var(--tertiary-color);
-  color: #fff;
+  background-color: #ffffff !important;
+  border-top: 1px solid #e0e0e0 !important;
+  color: #333333 !important;
   padding: 4rem 0 2rem;
   margin-top: 4rem;
 }
+.footer .text-body {
+  color: #333333 !important;
+}
+.footer .text-muted {
+  color: #6c757d !important;
+}
 .footer a {
-  color: #adb5bd;
+  color: #333333 !important;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .footer a:hover {
-  color: #fff;
+  color: var(--primary-color) !important;
 }
 .footer-logo {
   max-width: 180px;
@@ -243,6 +300,37 @@ strong, b { font-weight: 500; }
 }
 
 /* Utilities */
+/* Blog Read More CTA */
+.read-more-link {
+  color: var(--primary-color) !important;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.read-more-link:hover {
+  transform: translateX(5px);
+}
+.read-more-link i {
+  transition: transform 0.3s ease;
+}
+.read-more-link:hover i {
+  transform: translateX(3px);
+}
+
+/* Pagination Hover Fix */
+.page-link {
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+.page-link:hover {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  border-color: var(--primary-color) !important;
+}
+.page-item.active .page-link {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
 .section-padding {
   padding: 5rem 0;
 }

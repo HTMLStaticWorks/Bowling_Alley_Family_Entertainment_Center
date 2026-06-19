@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="assets/css/rtl.css">
     <style>
         body { min-height: 100vh; display: flex; flex-direction: column; background-color: var(--bg-color); }
-        .auth-page-wrapper { flex: 1; display: flex; align-items: center; justify-content: center; padding: 2rem 1rem; }
+        .auth-page-wrapper { flex: 1; display: flex; align-items: center; justify-content: center; padding: 5rem 1rem 2rem 1rem; }
         .auth-card { width: 100%; max-width: 480px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 2.5rem 2rem; box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
         .auth-logo { display: flex; flex-direction: column; align-items: center; margin-bottom: 1.75rem; }
         .divider-text { display: flex; align-items: center; gap: 0.75rem; color: #aaa; font-size: 0.85rem; margin: 1.25rem 0; }
         .divider-text::before, .divider-text::after { content: ''; flex: 1; height: 1px; background: var(--border-color); }
         .social-btn { display: flex; align-items: center; justify-content: center; gap: 0.65rem; width: 100%; padding: 0.7rem 1rem; border-radius: 8px; border: 1.5px solid var(--border-color); background: transparent; color: var(--text-color); font-weight: 500; font-size: 0.95rem; cursor: pointer; transition: background 0.2s, border-color 0.2s; }
         .social-btn:hover { background: var(--bg-color); border-color: #aaa; }
-        .auth-top-controls { position: fixed; top: 1rem; right: 1rem; display: flex; gap: 0.5rem; z-index: 999; }
+        .auth-top-controls { position: absolute; top: 1rem; right: 1rem; display: flex; gap: 0.5rem; z-index: 999; }
     </style>
 </head>
 <body>
@@ -34,8 +34,14 @@
     <div class="auth-page-wrapper">
         <div class="auth-card">
             <div class="auth-logo">
-                <a href="index.html">
-                    <img src="assets/images/logo.svg" alt="StrikeZone Logo" style="max-width: 210px; max-height: 50px; width: 100%;">
+                <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="9" cy="9" r="1.5" fill="#fff" />
+                        <circle cx="15" cy="9" r="1.5" fill="#fff" />
+                        <circle cx="12" cy="14" r="1.5" fill="#fff" />
+                    </svg>
+                    <span class="fw-bold fs-4 text-body">StrikeZone</span>
                 </a>
                 <p class="text-muted mt-2 mb-0 small">Create your account and start having fun!</p>
             </div>
@@ -58,9 +64,9 @@
                 <!-- Password -->
                 <div class="mb-3">
                     <label for="regPassword" class="form-label fw-bold small">Password</label>
-                    <div class="input-group">
-                        <input type="password" class="form-control form-control-lg" id="regPassword" placeholder="Create a password" required minlength="8">
-                        <button class="btn btn-outline-secondary" type="button" id="toggleRegPass" aria-label="Toggle password visibility">
+                    <div class="position-relative">
+                        <input type="password" class="form-control form-control-lg" id="regPassword" placeholder="Create a password" required minlength="8" style="padding-right: 3rem;">
+                        <button class="btn border-0 position-absolute end-0 top-50 translate-middle-y text-muted" type="button" id="toggleRegPass" aria-label="Toggle password visibility" style="z-index: 10;">
                             <i class="bi bi-eye" id="regEyeIcon"></i>
                         </button>
                     </div>
@@ -70,9 +76,9 @@
                 <!-- Confirm Password -->
                 <div class="mb-4">
                     <label for="confirmPassword" class="form-label fw-bold small">Confirm Password</label>
-                    <div class="input-group">
-                        <input type="password" class="form-control form-control-lg" id="confirmPassword" placeholder="Repeat your password" required>
-                        <button class="btn btn-outline-secondary" type="button" id="toggleConfirmPass" aria-label="Toggle confirm password visibility">
+                    <div class="position-relative">
+                        <input type="password" class="form-control form-control-lg" id="confirmPassword" placeholder="Repeat your password" required style="padding-right: 3rem;">
+                        <button class="btn border-0 position-absolute end-0 top-50 translate-middle-y text-muted" type="button" id="toggleConfirmPass" aria-label="Toggle confirm password visibility" style="z-index: 10;">
                             <i class="bi bi-eye" id="confirmEyeIcon"></i>
                         </button>
                     </div>
@@ -80,7 +86,7 @@
                 </div>
 
                 <!-- Sign Up Button -->
-                <button type="submit" class="btn btn-primary w-100 btn-lg py-2 mb-3">Sign Up</button>
+                <button type="submit" class="btn btn-primary w-100 btn-lg mb-3">Sign Up</button>
 
                 <!-- Social Login (below signup button) -->
                 <div class="divider-text">or continue with</div>

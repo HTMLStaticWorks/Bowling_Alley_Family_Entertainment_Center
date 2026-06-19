@@ -32,7 +32,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 2rem 1rem;
+            padding: 5rem 1rem 2rem 1rem;
         }
 
         .auth-card {
@@ -91,7 +91,7 @@
 
         /* Fixed toggles top-right */
         .auth-top-controls {
-            position: fixed;
+            position: absolute;
             top: 1rem;
             right: 1rem;
             display: flex;
@@ -114,8 +114,14 @@
 
             <!-- Logo inside card -->
             <div class="auth-logo">
-                <a href="index.html">
-                    <img src="assets/images/logo.svg" alt="StrikeZone Logo" style="max-width: 210px; max-height: 50px; width: 100%;">
+                <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="9" cy="9" r="1.5" fill="#fff" />
+                        <circle cx="15" cy="9" r="1.5" fill="#fff" />
+                        <circle cx="12" cy="14" r="1.5" fill="#fff" />
+                    </svg>
+                    <span class="fw-bold fs-4 text-body">StrikeZone</span>
                 </a>
                 <p class="text-muted mt-2 mb-0 small">Welcome back! Please sign in to continue.</p>
             </div>
@@ -133,9 +139,9 @@
                 <!-- Password -->
                 <div class="mb-3">
                     <label for="loginPassword" class="form-label fw-bold small">Password</label>
-                    <div class="input-group">
-                        <input type="password" class="form-control form-control-lg" id="loginPassword" placeholder="Enter your password" required>
-                        <button class="btn btn-outline-secondary" type="button" id="togglePassword" aria-label="Toggle password visibility">
+                    <div class="position-relative">
+                        <input type="password" class="form-control form-control-lg" id="loginPassword" placeholder="Enter your password" required style="padding-right: 3rem;">
+                        <button class="btn border-0 position-absolute end-0 top-50 translate-middle-y text-muted" type="button" id="togglePassword" aria-label="Toggle password visibility" style="z-index: 10;">
                             <i class="bi bi-eye" id="eyeIcon"></i>
                         </button>
                     </div>
@@ -152,7 +158,7 @@
                 </div>
 
                 <!-- Login Button (same width as fields) -->
-                <button type="submit" class="btn btn-primary w-100 btn-lg py-2 mb-3">
+                <button type="submit" class="btn btn-primary w-100 btn-lg mb-3">
                     Login
                 </button>
 

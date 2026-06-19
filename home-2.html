@@ -163,13 +163,22 @@
         <section class="section-padding">
             <div class="container">
                 <h2 class="text-center mb-5">What Our Guests Say</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
+                <div class="row justify-content-center g-4">
+                    <!-- Testimonial 1 -->
+                    <div class="col-md-6 text-center">
                         <i class="bi bi-quote text-primary opacity-50 display-1 mb-3"></i>
-                        <p class="fs-4 fst-italic mb-5">"We hosted our company's annual holiday party here and it was incredible. The VIP lanes, the food, the service — everything was top notch. Highly recommended!"</p>
+                        <p class="fs-5 fst-italic mb-5">"We hosted our company's annual holiday party here and it was incredible. The VIP lanes, the food, the service — everything was top notch. Highly recommended!"</p>
                         <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Sarah Jenkins" class="rounded-circle border border-3 border-primary mb-3" style="width:72px;height:72px;object-fit:cover;">
                         <h5 class="mb-1">Sarah Jenkins</h5>
                         <p class="text-muted small">HR Director, TechCorp</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="col-md-6 text-center">
+                        <i class="bi bi-quote text-primary opacity-50 display-1 mb-3"></i>
+                        <p class="fs-5 fst-italic mb-5">"An absolute blast! The kids loved the next-gen arcade, and the adults couldn't get enough of the craft cocktails. The perfect weekend destination."</p>
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Miller" class="rounded-circle border border-3 border-primary mb-3" style="width:72px;height:72px;object-fit:cover;">
+                        <h5 class="mb-1">David Miller</h5>
+                        <p class="text-muted small">Local Parent</p>
                     </div>
                 </div>
             </div>
@@ -186,7 +195,7 @@
                 </div>
                 <div class="row g-4 justify-content-center">
                     <!-- Basic Plan -->
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm text-center">
                             <div class="card-body p-5 d-flex flex-column">
                                 <h4 class="mb-3">Basic Fun</h4>
@@ -204,9 +213,9 @@
                         </div>
                     </div>
                     <!-- Premium Plan -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow text-center position-relative overflow-hidden" style="border-top: 4px solid var(--primary-color) !important;">
-                            <div class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 small fw-bold" style="border-bottom-left-radius:8px;">Most Popular</div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow text-center position-relative" style="border-top: 4px solid var(--primary-color) !important;">
+                            <div class="position-absolute start-50 translate-middle-x bg-secondary text-white px-3 py-1 small fw-bold" style="top: -4px; border-bottom-left-radius:8px; border-bottom-right-radius: 8px; z-index: 10;">Most Popular</div>
                             <div class="card-body p-5 d-flex flex-column">
                                 <h4 class="mb-3">Premium Night</h4>
                                 <div class="display-5 fw-bold text-primary mb-1">$45</div>
@@ -223,7 +232,7 @@
                         </div>
                     </div>
                     <!-- VIP Plan -->
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm text-center">
                             <div class="card-body p-5 d-flex flex-column">
                                 <h4 class="mb-3">VIP Experience</h4>
@@ -261,11 +270,11 @@
                             <!-- FAQ 1 -->
                             <div class="accordion-item border-0 shadow-sm mb-3 rounded-3 overflow-hidden">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
                                         Do I need to book in advance?
                                     </button>
                                 </h2>
-                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body text-muted">
                                         While walk-ins are always welcome, we strongly recommend booking online at least 24 hours in advance, especially on weekends and public holidays. This guarantees your lane and preferred time slot.
                                     </div>
@@ -343,11 +352,11 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <a class="d-flex align-items-center gap-2 text-white text-decoration-none mb-3" href="index.html">
+                    <a class="d-flex align-items-center gap-2 text-body text-decoration-none mb-3" href="index.html">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary-color)" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" /><circle cx="9" cy="9" r="1.5" fill="#fff" /><circle cx="15" cy="9" r="1.5" fill="#fff" /><circle cx="12" cy="14" r="1.5" fill="#fff" /></svg>
                         <span class="fw-bold fs-4">StrikeZone</span>
                     </a>
-                    <p class="small text-white-50 mb-4">Your ultimate destination for family fun, competitive bowling, and unforgettable events.</p>
+                    <p class="small text-muted mb-4">Your ultimate destination for family fun, competitive bowling, and unforgettable events.</p>
                     <div class="d-flex gap-3">
                         <a href="#"><i class="bi bi-facebook fs-5"></i></a>
                         <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
@@ -355,7 +364,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4 text-white">Quick Links</h5>
+                    <h5 class="mb-4 text-body">Quick Links</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Our Services</a></li>
@@ -364,7 +373,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4 text-white">Resources</h5>
+                    <h5 class="mb-4 text-body">Resources</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="faq.html">FAQs</a></li>
                         <li><a href="booking.html">Book a Lane</a></li>
@@ -373,7 +382,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4 text-white">Stay Updated</h5>
+                    <h5 class="mb-4 text-body">Stay Updated</h5>
                     <form class="d-flex" onsubmit="event.preventDefault();">
                         <input type="email" class="form-control rounded-end-0 border-0" placeholder="Email Address" required>
                         <button class="btn btn-primary rounded-start-0" type="submit">Subscribe</button>
@@ -381,8 +390,8 @@
                 </div>
             </div>
             <div class="row mt-5 pt-4 border-top border-secondary text-center text-md-start">
-                <div class="col-md-6 mb-3 mb-md-0"><p class="small text-white-50 mb-0">&copy; 2026 StrikeZone. All rights reserved.</p></div>
-                <div class="col-md-6 text-md-end"><a href="#" class="small text-white-50 me-3">Privacy Policy</a><a href="#" class="small text-white-50">Terms of Service</a></div>
+                <div class="col-md-6 mb-3 mb-md-0"><p class="small text-muted mb-0">&copy; 2026 StrikeZone. All rights reserved.</p></div>
+                <div class="col-md-6 text-md-end"><a href="#" class="small text-muted me-3">Privacy Policy</a><a href="#" class="small text-muted">Terms of Service</a></div>
             </div>
         </div>
     </footer>
