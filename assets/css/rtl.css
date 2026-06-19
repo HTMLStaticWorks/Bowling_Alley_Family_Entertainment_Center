@@ -17,6 +17,16 @@
   margin-right: 0 !important;
 }
 
+[dir="rtl"] .me-2 {
+  margin-left: 0.5rem !important;
+  margin-right: 0 !important;
+}
+
+[dir="rtl"] .ms-2 {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
 [dir="rtl"] .offcanvas {
   transform: translateX(100%);
 }
@@ -36,4 +46,61 @@
 [dir="rtl"] .offcanvas-header .btn-close {
   margin-left: -0.5rem !important;
   margin-right: auto !important;
+}
+
+/* Fix text alignments in RTL */
+[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+@media (min-width: 768px) {
+  [dir="rtl"] .text-md-start {
+    text-align: right !important;
+  }
+  [dir="rtl"] .text-md-end {
+    text-align: left !important;
+  }
+}
+
+/* Fix ul padding for list-unstyled in RTL */
+[dir="rtl"] .list-unstyled {
+  padding-right: 0 !important;
+}
+
+/* Fix accordion chevron placement in RTL */
+[dir="rtl"] .accordion-button::after {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Fix rounded corners for inputs and buttons in RTL */
+[dir="rtl"] .rounded-end-0 {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+}
+[dir="rtl"] .rounded-start-0 {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+}
+
+/* Auth Page RTL Overrides */
+[dir="rtl"] .auth-top-controls {
+  right: auto !important;
+  left: 1rem !important;
+}
+
+[dir="rtl"] input[type="password"] {
+  padding-right: 1rem !important;
+  padding-left: 3rem !important;
+}
+
+[dir="rtl"] .position-relative > .btn.end-0 {
+  right: auto !important;
+  left: 0 !important;
 }

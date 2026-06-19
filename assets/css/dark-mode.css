@@ -12,20 +12,57 @@
 
 [data-bs-theme="dark"] .theme-toggle-btn,
 [data-bs-theme="dark"] .rtl-toggle-btn {
-  border-color: #555;
-  color: #e0e0e0;
+  border-color: #555 !important;
+  color: #e0e0e0 !important;
 }
 [data-bs-theme="dark"] .theme-toggle-btn:hover,
 [data-bs-theme="dark"] .rtl-toggle-btn:hover {
-  background-color: #333;
+  background-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .navbar {
+  background-color: var(--card-bg) !important;
+  border-bottom-color: var(--border-color) !important;
+}
+[data-bs-theme="dark"] .navbar .text-body,
+[data-bs-theme="dark"] .navbar-brand .text-body,
+[data-bs-theme="dark"] .nav-link {
+  color: var(--text-color) !important;
 }
 
 [data-bs-theme="dark"] .offcanvas {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  --bs-offcanvas-bg: var(--card-bg);
+}
+[data-bs-theme="dark"] .offcanvas-header,
+[data-bs-theme="dark"] .offcanvas-body {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+[data-bs-theme="dark"] .offcanvas .text-body,
+[data-bs-theme="dark"] .offcanvas-title {
+  color: var(--text-color) !important;
 }
 [data-bs-theme="dark"] .btn-close {
   filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Footer Dark Mode */
+[data-bs-theme="dark"] .footer {
+  background-color: var(--card-bg) !important;
+  border-top-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+[data-bs-theme="dark"] .footer .text-body,
+[data-bs-theme="dark"] .footer a {
+  color: var(--text-color) !important;
+}
+[data-bs-theme="dark"] .footer .text-muted {
+  color: #a0a0a0 !important;
+}
+[data-bs-theme="dark"] .footer a:hover {
+  color: var(--primary-color) !important;
 }
 
 /* ── Newsletter Section: guaranteed contrast in both modes ── */
