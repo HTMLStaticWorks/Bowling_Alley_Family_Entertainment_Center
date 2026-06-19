@@ -29,6 +29,10 @@
 [data-bs-theme="dark"] .nav-link {
   color: var(--text-color) !important;
 }
+[data-bs-theme="dark"] .nav-link.active, 
+[data-bs-theme="dark"] .nav-link:hover {
+  color: var(--primary-color) !important;
+}
 
 [data-bs-theme="dark"] .offcanvas {
   background-color: var(--card-bg) !important;
