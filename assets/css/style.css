@@ -79,7 +79,9 @@ strong, b { font-weight: 500; }
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   object-fit: cover;
-  height: 250px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  width: 100%;
 }
 
 /* Header & Nav */
