@@ -96,6 +96,19 @@
         <!-- Blog Content & Sidebar -->
         <section class="section-padding bg-light-alt">
             <div class="container">
+                <!-- Mobile Search Box (Visible on < 992px) -->
+                <div class="d-lg-none mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 text-start">
+                            <h4 class="mb-3">Search</h4>
+                            <form class="d-flex" onsubmit="event.preventDefault();">
+                                <input class="form-control me-2" type="search" placeholder="Search articles..." aria-label="Search">
+                                <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row g-5">
                     <!-- Main Content: Blog Grid -->
                     <div class="col-lg-8">
@@ -163,7 +176,7 @@
                     
                     <!-- Sidebar: Search & Filter -->
                     <div class="col-lg-4">
-                        <div class="card border-0 shadow-sm mb-4">
+                        <div class="card border-0 shadow-sm mb-4 d-none d-lg-block">
                             <div class="card-body p-4 text-start">
                                 <h4 class="mb-3">Search</h4>
                                 <form class="d-flex" onsubmit="event.preventDefault();">
