@@ -96,15 +96,26 @@
         <!-- Blog Content & Sidebar -->
         <section class="section-padding bg-light-alt">
             <div class="container">
-                <!-- Mobile Search Box (Visible on < 992px) -->
+                <!-- Mobile Search Box & Categories (Visible on < 992px) -->
                 <div class="d-lg-none mb-4">
-                    <div class="card border-0 shadow-sm">
+                    <div class="card border-0 shadow-sm mb-3">
                         <div class="card-body p-4 text-start">
                             <h4 class="mb-3">Search</h4>
                             <form class="d-flex" onsubmit="event.preventDefault();">
                                 <input class="form-control me-2" type="search" placeholder="Search articles..." aria-label="Search">
                                 <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
                             </form>
+                        </div>
+                    </div>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 text-start">
+                            <h4 class="mb-3">Categories</h4>
+                            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                                <li><a href="#" class="text-decoration-none text-muted d-flex justify-content-between"><span>News</span> <span class="badge bg-light text-dark">8</span></a></li>
+                                <li><a href="#" class="text-decoration-none text-muted d-flex justify-content-between"><span>Events</span> <span class="badge bg-light text-dark">12</span></a></li>
+                                <li><a href="#" class="text-decoration-none text-muted d-flex justify-content-between"><span>Tips & Tricks</span> <span class="badge bg-light text-dark">5</span></a></li>
+                                <li><a href="#" class="text-decoration-none text-muted d-flex justify-content-between"><span>Food & Drink</span> <span class="badge bg-light text-dark">3</span></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -186,7 +197,7 @@
                             </div>
                         </div>
                         
-                        <div class="card border-0 shadow-sm mb-4">
+                        <div class="card border-0 shadow-sm mb-4 d-none d-lg-block">
                             <div class="card-body p-4 text-start">
                                 <h4 class="mb-3">Categories</h4>
                                 <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
